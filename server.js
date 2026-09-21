@@ -1,37 +1,44 @@
-Na ƙirƙiro maka **cikakken app** mai suna **DIGITAL INGINIYA** — kasuwar kayan waya da gyara (sikirin, waya, batere, caji, fulaket, sabi), tare da **Pi SDK**, **wallet**, **admin dashboard**, da **Vercel API** don approve/complete.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ </title>DIGITAL IGINIYARIN<title>
+<meta name="viwport" content"=width=device-width, initial-scale=1.0">
 
-Ka iya sauke project ɗin nan:
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+ <header>
+  <h1>DIGITAL INGINIYARIN</h1>
+ <p>Marketplace na digital</p>
+</header>
 
+<main class="container">
 
-### Abin da ke ciki
-- Store + kati + biya da **π**
-- Form na **gyara waya**
-- **Admin dashboard** (ƙara kaya, odina, gyara)
-- `Pi.init({ version: "2.0", sandbox: true })` — **testnet/sandbox**
-- `Pi.authenticate(['username','payments','wallet_address'])`
-- `Pi.createPayment` + wallet display
-- Serverless: `/api/payments/approve` da `/api/payments/complete`
+ <div class="card">
+  <h2>Barka da zuwa</h2>
+  <p>Wannan App din kasuwanci ne na siya dasiyarwa.</p>
+   </div>
 
-**Kalmar sirrin Admin:** `inginiya2026`
+    <div class="card">
+    <h3>Categories</h3>
+    <u1>
+    <li>kayan & wayahanu</li>
+    <l1>Sababin ful</l1>
+    <li>Furniture</li>
+    <li>dasababinkaya</li>
+    <li>Kayan gerasu</li>
+   </u1>
+  </div>
 
-### GitHub + Vercel (taƙaitacce)
-```bash
-cd digital-inginiya
-git init && git add . && git commit -m "DIGITAL INGINIYA"
-git remote add origin https://github.com/USERNAME/digital-inginiya.git
-git push -u origin main
-```
-Sa’an nan Import repo a **Vercel**. Saka env: `PI_API_KEY` daga Pi Developer Portal.
+  <button id="startBtn">Fara Amfani</button>
 
-A **Pi Browser** bude `develop.pinet.com`:
-- App name: DIGITAL INGINIYA  
-- Network: **Testnet**  
-- Production URL: `https://xxxx.vercel.app`  
-- Development URL: irin Vercel URL ɗinka  
+  </main>
 
-Bude app a **Pi Browser** ko **sandbox.minepi.com**, danna **Haɗa Wallet**, sai ka biya.
+  <!-- Link js -->
+  <script src="script.js"><</script>
+</body>
+</html>
 
-Idan babu `PI_API_KEY` tukuna, API tana yin **demo approve** don ka iya gwadawa UI. Don ainihin biya a testnet, dole ka saka API key ɗin Pi.
-
-Idan kana so na ƙara backend na oda (database), multi-vendor, ko Hausa/English toggle, faɗa min.
